@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <form action="/submit" method="POST">
+        <h2>Join PowerFit Gym</h2>
+
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+
+        <select name="plan" required>
+            <option value="">Select Plan</option>
+            <option>Basic</option>
+            <option>Premium</option>
+            <option>Personal Training</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+
+</body>
+</html>
